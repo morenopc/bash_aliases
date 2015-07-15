@@ -14,7 +14,10 @@ alias tar='tar -zcvf'
 alias findd='find -type d -name'
 alias findf='find -name'
 
+# PYTHON / DJANGO
+alias clean_pyc='find . -type f -name "*.pyc" -delete'
+alias grepcode='grep -Rs --exclude-dir=migrations --exclude=*.*{min.css,min.js,pyc}'
+
 # ALIASES
 alias cd..='cd ..'
-alias sysv='sudo sysv-rc-conf'
 alias deb='sudo dpkg -i'
