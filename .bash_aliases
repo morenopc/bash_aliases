@@ -10,6 +10,10 @@ alias apt='sudo apt-get install'
 alias untar='tar -xzf'
 alias tar='tar -zcvf'
 
+# FIND
+alias findd='find -type d -name'
+alias findf='find -name'
+
 # ALIASES
 alias cd..='cd ..'
 alias sysv='sudo sysv-rc-conf'
