@@ -18,6 +18,9 @@ alias findf='find -name'
 alias clean_pyc='find . -type f -name "*.pyc" -delete'
 alias grepcode='grep -Rs --exclude-dir=migrations --exclude=*.*{min.css,min.js,pyc}'
 
+# LIST
+alias lsa='ls -la'
+
 # ALIASES
 alias cd..='cd ..'
 alias deb='sudo dpkg -i'
