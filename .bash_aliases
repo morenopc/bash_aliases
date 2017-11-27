@@ -19,6 +19,11 @@ alias clean_pyc='find . -type f -name "*.pyc" -delete'
 alias clean_py3='py3clean .'
 alias grepcode='grep -Rs --exclude-dir=migrations --exclude=*.*{min.css,min.js,pyc}'
 
+# JSON
+# echo '{"foo": "lorem", "bar": "ipsum"}' | python2 -m json.tool
+# echo '{"foo": "lorem", "bar": "ipsum"}' | prettyjson
+alias prettyjson='python2 -m json.tool'
+
 # LIST
 alias las='ls -la'
 
