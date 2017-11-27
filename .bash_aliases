@@ -1,4 +1,7 @@
 # My alias definitions.
+#
+# Reload bash's .bash_aliases without logging out and back in again.
+# $ . ~/.bash_aliases
 
 # APT
 alias search='apt search'
