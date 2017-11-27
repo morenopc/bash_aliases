@@ -34,3 +34,15 @@ alias las='ls -la'
 # ALIASES
 alias cd..='cd ..'
 alias deb='sudo dpkg -i'
+# ubuntu version
+ubuntu () {
+    if [ -z "$1" ]; then
+        echo "Perhaps you meant 'ubuntu -v'?"
+    else
+        if [ "$1" = "-v" ]; then
+            lsb_release -a
+        else
+            echo "ERROR: strange time detected: $1"
+        fi
+    fi
+}
