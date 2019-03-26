@@ -20,7 +20,7 @@ alias findf='find -name'
 
 # PYTHON / DJANGO
 alias clean_pyc='find . -type f -name "*.pyc" -delete'
-alias clean_py3='py3clean .'
+alias clean_py3='find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf'
 alias grepcode='grep -Rs --exclude-dir=migrations --exclude=*.*{min.css,min.js,pyc}'
 
 # JSON
@@ -31,7 +31,7 @@ alias prettyjson='python2 -m json.tool'
 # LIST
 alias las='ls -la'
 
-# ALIASES
+# UBUNTU
 alias cd..='cd ..'
 alias deb='sudo dpkg -i'
 # ubuntu version
@@ -46,3 +46,4 @@ ubuntu () {
         fi
     fi
 }
+alias distro='lsb_release -a'
